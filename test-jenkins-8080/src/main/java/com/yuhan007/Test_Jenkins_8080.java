@@ -9,5 +9,6 @@ public class Test_Jenkins_8080 {
         SpringApplication.run(Test_Jenkins_8080.class, args);
         System.out.println("a");
         System.out.println("a");
+        System.out.println("a");
     }
 }
