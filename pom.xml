@@ -94,7 +94,7 @@
                     <!--<mainClass>com.yuhan007.Test_Jenkins_8080</mainClass>-->
                 <!--</configuration>-->
             <!--</plugin>-->
-            <plugin>
+            <plugin><!--springboot打包时候找不到main类  引入下面这个坐标-->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <executions>
