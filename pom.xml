@@ -87,6 +87,13 @@
                     </delimiters>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.yuhan007.Test_Jenkins_8080</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
