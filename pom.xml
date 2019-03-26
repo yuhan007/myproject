@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>test-jenkins-8080</module>
+        <module>spring-boot-01-hello</module>
+        <module>mybatisplus-demo</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,10 +37,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- mysql connector数据库驱动 -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>5.0.4</version>
+                <version>5.1.44</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -73,10 +76,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.4.2.RELEASE</version>
-                <configuration>
-                    <mainClass>com.yuhan007.Test_Jenkins_8080</mainClass>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
