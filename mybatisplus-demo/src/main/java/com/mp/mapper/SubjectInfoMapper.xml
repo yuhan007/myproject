@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.SubjectInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.SubjectInfo">
+        <id column="SUBJECT_CODE" property="subjectCode" />
+        <result column="SUBJECT_NAME" property="subjectName" />
+        <result column="SUBJECT_TYPE" property="subjectType" />
+        <result column="USED_ORGANIZA" property="usedOrganiza" />
+        <result column="BALANCE_DIRECTION" property="balanceDirection" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="REMARK" property="remark" />
+        <result column="ISSYNC" property="issync" />
+        <result column="SYNC_TIME" property="syncTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SUBJECT_CODE, SUBJECT_NAME, SUBJECT_TYPE, USED_ORGANIZA, BALANCE_DIRECTION, CREATE_TIME, UPDATE_TIME, CREATE_USER_ID, UPDATE_USER_ID, REMARK, ISSYNC, SYNC_TIME
+    </sql>
+
+</mapper>

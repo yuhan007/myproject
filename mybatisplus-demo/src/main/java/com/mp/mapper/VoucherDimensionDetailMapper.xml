@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.VoucherDimensionDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.VoucherDimensionDetail">
+        <id column="DIMENSION_DETAIL_ID" property="dimensionDetailId" />
+        <result column="SUBJECT_DETAIL_ID" property="subjectDetailId" />
+        <result column="DIMENSION_TYPE" property="dimensionType" />
+        <result column="DIMENSION_CODE" property="dimensionCode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        DIMENSION_DETAIL_ID, SUBJECT_DETAIL_ID, DIMENSION_TYPE, DIMENSION_CODE
+    </sql>
+
+</mapper>

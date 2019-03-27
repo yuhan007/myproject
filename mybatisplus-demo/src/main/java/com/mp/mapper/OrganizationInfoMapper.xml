@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.OrganizationInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.OrganizationInfo">
+        <id column="ORGANIZATION_CODE" property="organizationCode" />
+        <result column="ORGANIZATION_NAME" property="organizationName" />
+        <result column="ORGANIZATION_MORPHOLOGY" property="organizationMorphology" />
+        <result column="ORGANIZATION_TYPE" property="organizationType" />
+        <result column="PARENT_CODE" property="parentCode" />
+        <result column="TAX_RATE" property="taxRate" />
+        <result column="ORGANIZATION_STATUS" property="organizationStatus" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="ISSYNC" property="issync" />
+        <result column="ACCOUNT_BOOK" property="accountBook" />
+        <result column="SYNC_TIME" property="syncTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ORGANIZATION_CODE, ORGANIZATION_NAME, ORGANIZATION_MORPHOLOGY, ORGANIZATION_TYPE, PARENT_CODE, TAX_RATE, ORGANIZATION_STATUS, CREATE_USER_ID, UPDATE_USER_ID, CREATE_TIME, UPDATE_TIME, ISSYNC, ACCOUNT_BOOK, SYNC_TIME
+    </sql>
+
+</mapper>

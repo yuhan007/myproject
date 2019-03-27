@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.CustomerInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.CustomerInfo">
+        <id column="CUSTOMER_ID" property="customerId" />
+        <result column="CUSTOMER_NAME" property="customerName" />
+        <result column="CUSTOMER_SIMPLE_NAME" property="customerSimpleName" />
+        <result column="REMARK" property="remark" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="JINDIE_CUSTOMER_ID" property="jindieCustomerId" />
+        <result column="ISSYNC" property="issync" />
+        <result column="SYNC_TIME" property="syncTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CUSTOMER_ID, CUSTOMER_NAME, CUSTOMER_SIMPLE_NAME, REMARK, CREATE_TIME, UPDATE_TIME, CREATE_USER_ID, UPDATE_USER_ID, JINDIE_CUSTOMER_ID, ISSYNC, SYNC_TIME
+    </sql>
+
+</mapper>

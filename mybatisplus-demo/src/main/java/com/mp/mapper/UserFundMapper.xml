@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.UserFundMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.UserFund">
+        <id column="USER_ID" property="userId" />
+        <result column="USER_AMOUNT" property="userAmount" />
+        <result column="PAY_TYPE" property="payType" />
+        <result column="MEMBER_PERIOD" property="memberPeriod" />
+        <result column="CREDIT_LIMIT" property="creditLimit" />
+        <result column="AVAILABLE_LIMIT" property="availableLimit" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="BILL_CALCULATE_LASTTIME" property="billCalculateLasttime" />
+        <result column="BILL_CALCULATE_LASTATUS" property="billCalculateLastatus" />
+        <result column="REMARK" property="remark" />
+        <result column="VERSION" property="version" />
+        <result column="USER_NAME" property="userName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        USER_ID, USER_AMOUNT, PAY_TYPE, MEMBER_PERIOD, CREDIT_LIMIT, AVAILABLE_LIMIT, CREATE_TIME, UPDATE_TIME, BILL_CALCULATE_LASTTIME, BILL_CALCULATE_LASTATUS, REMARK, VERSION, USER_NAME
+    </sql>
+
+</mapper>

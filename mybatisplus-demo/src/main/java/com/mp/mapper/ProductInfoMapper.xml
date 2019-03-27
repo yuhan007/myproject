@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.ProductInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.ProductInfo">
+        <id column="PRODUCT_ID" property="productId" />
+        <result column="PRODUCT_TYPE" property="productType" />
+        <result column="PRODUCT_NAME" property="productName" />
+        <result column="PRODUCT_DESCRIPTION" property="productDescription" />
+        <result column="BANK_ID" property="bankId" />
+        <result column="PRESENT_PRODUCT_ID" property="presentProductId" />
+        <result column="STATUS" property="status" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="STANDARD_PRODUCT_ID" property="standardProductId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PRODUCT_ID, PRODUCT_TYPE, PRODUCT_NAME, PRODUCT_DESCRIPTION, BANK_ID, PRESENT_PRODUCT_ID, STATUS, CREATE_USER_ID, CREATE_TIME, UPDATE_USER_ID, UPDATE_TIME, STANDARD_PRODUCT_ID
+    </sql>
+
+</mapper>

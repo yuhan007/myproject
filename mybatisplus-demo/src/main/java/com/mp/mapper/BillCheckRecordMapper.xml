@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.BillCheckRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.BillCheckRecord">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="BALANCE_ID" property="balanceId" />
+        <result column="OLD_TOTAL_AMOUNT" property="oldTotalAmount" />
+        <result column="NEW_TOTAL_AMOUNT" property="newTotalAmount" />
+        <result column="CHECK_TIME" property="checkTime" />
+        <result column="REMARK" property="remark" />
+        <result column="CHECK_USER_ID" property="checkUserId" />
+        <result column="NEW_COPIES" property="newCopies" />
+        <result column="OLD_COPIES" property="oldCopies" />
+        <result column="BILL_CHECK_TYPE" property="billCheckType" />
+        <result column="OLD_SETTLEMENT_AMOUNT" property="oldSettlementAmount" />
+        <result column="NEW_SETTLEMENT_AMOUNT" property="newSettlementAmount" />
+        <result column="OLD_TAX_AMOUNT" property="oldTaxAmount" />
+        <result column="NEW_TAX_AMOUNT" property="newTaxAmount" />
+        <result column="OLD_SETTLEMENT_COPIES" property="oldSettlementCopies" />
+        <result column="NEW_SETTLEMENT_COPIES" property="newSettlementCopies" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, BALANCE_ID, OLD_TOTAL_AMOUNT, NEW_TOTAL_AMOUNT, CHECK_TIME, REMARK, CHECK_USER_ID, NEW_COPIES, OLD_COPIES, BILL_CHECK_TYPE, OLD_SETTLEMENT_AMOUNT, NEW_SETTLEMENT_AMOUNT, OLD_TAX_AMOUNT, NEW_TAX_AMOUNT, OLD_SETTLEMENT_COPIES, NEW_SETTLEMENT_COPIES
+    </sql>
+
+</mapper>

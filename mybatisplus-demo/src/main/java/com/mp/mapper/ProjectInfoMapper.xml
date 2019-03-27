@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.ProjectInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.ProjectInfo">
+        <id column="PROJECT_ID" property="projectId" />
+        <result column="PROJECT_NAME" property="projectName" />
+        <result column="PROJECT_SUMMARY" property="projectSummary" />
+        <result column="CUSTOMER_ID" property="customerId" />
+        <result column="REMARK" property="remark" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="STATUS" property="status" />
+        <result column="ISSYNC" property="issync" />
+        <result column="PROJECT_STATUS" property="projectStatus" />
+        <result column="NEW_PROJECT_ID" property="newProjectId" />
+        <result column="SYNC_TIME" property="syncTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PROJECT_ID, PROJECT_NAME, PROJECT_SUMMARY, CUSTOMER_ID, REMARK, CREATE_TIME, UPDATE_TIME, CREATE_USER_ID, UPDATE_USER_ID, STATUS, ISSYNC, PROJECT_STATUS, NEW_PROJECT_ID, SYNC_TIME
+    </sql>
+
+</mapper>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.BalanceConfirmationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.BalanceConfirmation">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="YEAR" property="year" />
+        <result column="QUARTER" property="quarter" />
+        <result column="MONTH" property="month" />
+        <result column="BALANCE_AMOUNT" property="balanceAmount" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CONFIRMATION_NAME" property="confirmationName" />
+        <result column="FILE_PATH" property="filePath" />
+        <result column="REMARK" property="remark" />
+        <result column="BALANCED_AMOUNT" property="balancedAmount" />
+        <result column="NOT_BALANCED_AMOUNT" property="notBalancedAmount" />
+        <result column="BALANCE_STATUS" property="balanceStatus" />
+        <result column="LATEST_BALANCE_TIME" property="latestBalanceTime" />
+        <result column="BRANCH_ID" property="branchId" />
+        <result column="BRANCH_FULL_NAME" property="branchFullName" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="INVOICE_APPLY_USER_ID" property="invoiceApplyUserId" />
+        <result column="INVOICE_APPLY_STATUS" property="invoiceApplyStatus" />
+        <result column="INVOICE_APPLY_TIME" property="invoiceApplyTime" />
+        <result column="INVOICE_USER_ID" property="invoiceUserId" />
+        <result column="INVOICE_TIME" property="invoiceTime" />
+        <result column="INVOICE_REMARK" property="invoiceRemark" />
+        <result column="SYNC_MONEY" property="syncMoney" />
+        <result column="FINANCE_CHECK_MONEY" property="financeCheckMoney" />
+        <result column="INVOICE_STATUS" property="invoiceStatus" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, USER_ID, USER_NAME, YEAR, QUARTER, MONTH, BALANCE_AMOUNT, CREATE_TIME, CONFIRMATION_NAME, FILE_PATH, REMARK, BALANCED_AMOUNT, NOT_BALANCED_AMOUNT, BALANCE_STATUS, LATEST_BALANCE_TIME, BRANCH_ID, BRANCH_FULL_NAME, CREATE_USER_ID, INVOICE_APPLY_USER_ID, INVOICE_APPLY_STATUS, INVOICE_APPLY_TIME, INVOICE_USER_ID, INVOICE_TIME, INVOICE_REMARK, SYNC_MONEY, FINANCE_CHECK_MONEY, INVOICE_STATUS
+    </sql>
+
+</mapper>

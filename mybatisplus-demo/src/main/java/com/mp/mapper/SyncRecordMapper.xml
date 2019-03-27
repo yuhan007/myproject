@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.SyncRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.SyncRecord">
+        <id column="SYCN_ID" property="sycnId" />
+        <result column="VOUCHER_ID" property="voucherId" />
+        <result column="DANJU_TYPE" property="danjuType" />
+        <result column="ACCOUNT_BOOK" property="accountBook" />
+        <result column="ACCOUNTS_ORGN_ID" property="accountsOrgnId" />
+        <result column="BILL_CYCLE" property="billCycle" />
+        <result column="VOUCHER_WORD" property="voucherWord" />
+        <result column="VOUCHER_NUMBER" property="voucherNumber" />
+        <result column="SYNC_TIME" property="syncTime" />
+        <result column="F_DATE" property="fDate" />
+        <result column="FINANCE_CHECK_STATUS" property="financeCheckStatus" />
+        <result column="FINANCE_CHECK_TIME" property="financeCheckTime" />
+        <result column="SYNC_USER_ID" property="syncUserId" />
+        <result column="SYNC_TYPE" property="syncType" />
+        <result column="REMARK" property="remark" />
+        <result column="SYNC_STATUS" property="syncStatus" />
+        <result column="SYNC_MESSAGE" property="syncMessage" />
+        <result column="PROJECT_IDS" property="projectIds" />
+        <result column="BILL_BALANCE_RECORD_ID" property="billBalanceRecordId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SYCN_ID, VOUCHER_ID, DANJU_TYPE, ACCOUNT_BOOK, ACCOUNTS_ORGN_ID, BILL_CYCLE, VOUCHER_WORD, VOUCHER_NUMBER, SYNC_TIME, F_DATE, FINANCE_CHECK_STATUS, FINANCE_CHECK_TIME, SYNC_USER_ID, SYNC_TYPE, REMARK, SYNC_STATUS, SYNC_MESSAGE, PROJECT_IDS, BILL_BALANCE_RECORD_ID
+    </sql>
+
+</mapper>

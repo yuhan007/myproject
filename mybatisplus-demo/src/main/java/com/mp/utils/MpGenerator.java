@@ -26,13 +26,15 @@ public class MpGenerator {
      */
     private static void generateByTables(boolean serviceNameStartWithI, String packageName, String author, String database, String... tableNames) {
         GlobalConfig config = new GlobalConfig();
-        String dbUrl = "jdbc:mysql://yuhan007.com:3306/" + database + "?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false";
+//        String dbUrl = "jdbc:mysql://yuhan007.com:3306/" + database + "?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false";
+        String dbUrl = "jdbc:oracle:thin:@192.168.81.42:1521/ninvoice";
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
-        dataSourceConfig.setDbType(DbType.MYSQL)
+        dataSourceConfig.setDbType(DbType.ORACLE)
                 .setUrl(dbUrl)
-                .setUsername("root")
-                .setPassword("root")
-                .setDriverName("com.mysql.jdbc.Driver");
+                .setUsername("charge")
+                .setPassword("charge")
+//                .setDriverName("com.mysql.jdbc.Driver");
+                .setDriverName("oracle.jdbc.driver.OracleDriver");
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig
                 .setCapitalMode(true)

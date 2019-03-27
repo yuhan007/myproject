@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.PreviewBillBalanceDifferentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.PreviewBillBalanceDifferent">
+        <id column="PBBD_ID" property="pbbdId" />
+        <result column="USER_ID" property="userId" />
+        <result column="YEAR" property="year" />
+        <result column="QUARTER" property="quarter" />
+        <result column="STANDARD_PRODUCT_ID" property="standardProductId" />
+        <result column="SYNCHRONIZATION_STATUS" property="synchronizationStatus" />
+        <result column="SYNCHRONIZATION_USER_ID" property="synchronizationUserId" />
+        <result column="AMOUNT" property="amount" />
+        <result column="PREVIEW_AMOUNT" property="previewAmount" />
+        <result column="PREVIEW_DIFFERENT" property="previewDifferent" />
+        <result column="BUSINESS_INCOME_DIFFERENT" property="businessIncomeDifferent" />
+        <result column="TAX_AMOUNT_DIFFERENT" property="taxAmountDifferent" />
+        <result column="PREVIEW_DIFFERENT_RATE" property="previewDifferentRate" />
+        <result column="IS_EXCEPTION" property="isException" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="REMARK" property="remark" />
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="SYNCHRONIZATION_TIME" property="synchronizationTime" />
+        <result column="FINANCE_CHECK_TIME" property="financeCheckTime" />
+        <result column="FINANCE_CHECK_STATUS" property="financeCheckStatus" />
+        <result column="QUARTER_BILL_ID" property="quarterBillId" />
+        <result column="SETTLEMENT_AMOUNT" property="settlementAmount" />
+        <result column="PREVIEW_SETTLEMENT_AMOUNT" property="previewSettlementAmount" />
+        <result column="SETTLEMENT_AMOUNT_DIFFERENT" property="settlementAmountDifferent" />
+        <result column="SETTLEMENT_AMOUNT_DIFF_RATE" property="settlementAmountDiffRate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PBBD_ID, USER_ID, YEAR, QUARTER, STANDARD_PRODUCT_ID, SYNCHRONIZATION_STATUS, SYNCHRONIZATION_USER_ID, AMOUNT, PREVIEW_AMOUNT, PREVIEW_DIFFERENT, BUSINESS_INCOME_DIFFERENT, TAX_AMOUNT_DIFFERENT, PREVIEW_DIFFERENT_RATE, IS_EXCEPTION, CREATE_TIME, UPDATE_TIME, REMARK, AREA_CODE, SYNCHRONIZATION_TIME, FINANCE_CHECK_TIME, FINANCE_CHECK_STATUS, QUARTER_BILL_ID, SETTLEMENT_AMOUNT, PREVIEW_SETTLEMENT_AMOUNT, SETTLEMENT_AMOUNT_DIFFERENT, SETTLEMENT_AMOUNT_DIFF_RATE
+    </sql>
+
+</mapper>

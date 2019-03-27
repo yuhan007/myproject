@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.PreviewBillBalanceInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.PreviewBillBalanceInfo">
+        <id column="BALANCE_ID" property="balanceId" />
+        <result column="USER_ID" property="userId" />
+        <result column="YEAR" property="year" />
+        <result column="MONTH" property="month" />
+        <result column="PRODUCT_ID" property="productId" />
+        <result column="COPIES" property="copies" />
+        <result column="TOTAL_AMOUNT" property="totalAmount" />
+        <result column="CHECK_STATUS" property="checkStatus" />
+        <result column="LATEST_CHECK_TIME" property="latestCheckTime" />
+        <result column="CREATE_TYPE" property="createType" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="REMARK" property="remark" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="CHECK_CONFIRM_USER_ID" property="checkConfirmUserId" />
+        <result column="CHECK_CONFIRM_TIME" property="checkConfirmTime" />
+        <result column="NOT_QC_COPIES" property="notQcCopies" />
+        <result column="CONFIRMATION_CREATE_STATUS" property="confirmationCreateStatus" />
+        <result column="INITIAL_AMOUNT" property="initialAmount" />
+        <result column="CONFIRMATION_CREATE_TIME" property="confirmationCreateTime" />
+        <result column="INITIAL_COPIES" property="initialCopies" />
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="PROFIT_BASE" property="profitBase" />
+        <result column="BILL_TYPE" property="billType" />
+        <result column="QUARTER" property="quarter" />
+        <result column="RECHECK_STATUS" property="recheckStatus" />
+        <result column="LATEST_RECHECK_TIME" property="latestRecheckTime" />
+        <result column="RECHECK_USER_ID" property="recheckUserId" />
+        <result column="RECHECK_REMARK" property="recheckRemark" />
+        <result column="BUSINESS_INCOME" property="businessIncome" />
+        <result column="TAX_AMOUNT" property="taxAmount" />
+        <result column="TAX_RATE" property="taxRate" />
+        <result column="SYNCHRONIZATION_STATUS" property="synchronizationStatus" />
+        <result column="SYNCHRONIZATION_USER_ID" property="synchronizationUserId" />
+        <result column="SYNCHRONIZATION_TIME" property="synchronizationTime" />
+        <result column="INTEGRITY" property="integrity" />
+        <result column="FINANCE_CHECK_STATUS" property="financeCheckStatus" />
+        <result column="FINANCE_CHECK_TIME" property="financeCheckTime" />
+        <result column="FINANCE_CHECK_USER_ID" property="financeCheckUserId" />
+        <result column="SETTLEMENT_AMOUNT" property="settlementAmount" />
+        <result column="SETTLEMENT_COPIES" property="settlementCopies" />
+        <result column="OUT_ACCOUNT_TYPE" property="outAccountType" />
+        <result column="ALL_COPIES" property="allCopies" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        BALANCE_ID, USER_ID, YEAR, MONTH, PRODUCT_ID, COPIES, TOTAL_AMOUNT, CHECK_STATUS, LATEST_CHECK_TIME, CREATE_TYPE, CREATE_TIME, UPDATE_TIME, REMARK, CREATE_USER_ID, UPDATE_USER_ID, CHECK_CONFIRM_USER_ID, CHECK_CONFIRM_TIME, NOT_QC_COPIES, CONFIRMATION_CREATE_STATUS, INITIAL_AMOUNT, CONFIRMATION_CREATE_TIME, INITIAL_COPIES, AREA_CODE, PROFIT_BASE, BILL_TYPE, QUARTER, RECHECK_STATUS, LATEST_RECHECK_TIME, RECHECK_USER_ID, RECHECK_REMARK, BUSINESS_INCOME, TAX_AMOUNT, TAX_RATE, SYNCHRONIZATION_STATUS, SYNCHRONIZATION_USER_ID, SYNCHRONIZATION_TIME, INTEGRITY, FINANCE_CHECK_STATUS, FINANCE_CHECK_TIME, FINANCE_CHECK_USER_ID, SETTLEMENT_AMOUNT, SETTLEMENT_COPIES, OUT_ACCOUNT_TYPE, ALL_COPIES
+    </sql>
+
+</mapper>

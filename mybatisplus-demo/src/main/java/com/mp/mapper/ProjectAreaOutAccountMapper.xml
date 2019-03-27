@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.ProjectAreaOutAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.ProjectAreaOutAccount">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="PROJECT_ID" property="projectId" />
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="OUT_PROJECT_ID" property="outProjectId" />
+        <result column="REMARK" property="remark" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="OUT_PROJECT_NAME" property="outProjectName" />
+        <result column="AREA_NAME" property="areaName" />
+        <result column="PROJECT_NAME" property="projectName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, PROJECT_ID, AREA_CODE, OUT_PROJECT_ID, REMARK, CREATE_USER_ID, UPDATE_USER_ID, CREATE_TIME, UPDATE_TIME, OUT_PROJECT_NAME, AREA_NAME, PROJECT_NAME
+    </sql>
+
+</mapper>

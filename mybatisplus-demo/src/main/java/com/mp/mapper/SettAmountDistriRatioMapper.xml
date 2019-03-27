@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.SettAmountDistriRatioMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.SettAmountDistriRatio">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="PROJECT_ID" property="projectId" />
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="DISTRIBUTION_RATIO" property="distributionRatio" />
+        <result column="RECEIVE_AREA_CODE" property="receiveAreaCode" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="REMARK" property="remark" />
+        <result column="PROJECT_NAME" property="projectName" />
+        <result column="AREA_NAME" property="areaName" />
+        <result column="RECEIVE_AREA_NAME" property="receiveAreaName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, PROJECT_ID, AREA_CODE, DISTRIBUTION_RATIO, RECEIVE_AREA_CODE, CREATE_TIME, CREATE_USER_ID, UPDATE_TIME, UPDATE_USER_ID, REMARK, PROJECT_NAME, AREA_NAME, RECEIVE_AREA_NAME
+    </sql>
+
+</mapper>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.PostloanListMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.PostloanList">
+        <result column="ID_" property="id" />
+        <result column="DH_ID" property="dhId" />
+        <result column="BANK" property="bank" />
+        <result column="PRODUCT" property="product" />
+        <result column="YF" property="yf" />
+        <result column="NSRMC" property="nsrmc" />
+        <result column="NSRSBH" property="nsrsbh" />
+        <result column="AREA" property="area" />
+        <result column="LRSJ" property="lrsj" />
+        <result column="SBSSQQ" property="sbssqq" />
+        <result column="SBSSQZ" property="sbssqz" />
+        <result column="NSLXMC" property="nslxmc" />
+        <result column="NSRZTMC" property="nsrztmc" />
+        <result column="CQBZ" property="cqbz" />
+        <result column="JCBZ" property="jcbz" />
+        <result column="FSBZ" property="fsbz" />
+        <result column="REMARK01" property="remark01" />
+        <result column="REMARK02" property="remark02" />
+        <result column="REMARK03" property="remark03" />
+        <result column="REMARK04" property="remark04" />
+        <result column="REMARK05" property="remark05" />
+        <result column="REMARK06" property="remark06" />
+        <result column="ORDER_NO" property="orderNo" />
+        <result column="APPENDIX" property="appendix" />
+        <result column="USER_ID" property="userId" />
+        <result column="PRODUCT_ID" property="productId" />
+        <result column="TEAM" property="team" />
+        <result column="DJXH" property="djxh" />
+        <result column="ORDER_NSRSBH" property="orderNsrsbh" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CREATE_BY" property="createBy" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="UPDATE_BY" property="updateBy" />
+        <result column="FLAG" property="flag" />
+        <result column="VERSION" property="version" />
+        <result column="ENABLE_" property="enable" />
+        <result column="REMARK_" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID_, DH_ID, BANK, PRODUCT, YF, NSRMC, NSRSBH, AREA, LRSJ, SBSSQQ, SBSSQZ, NSLXMC, NSRZTMC, CQBZ, JCBZ, FSBZ, REMARK01, REMARK02, REMARK03, REMARK04, REMARK05, REMARK06, ORDER_NO, APPENDIX, USER_ID, PRODUCT_ID, TEAM, DJXH, ORDER_NSRSBH, CREATE_TIME, CREATE_BY, UPDATE_TIME, UPDATE_BY, FLAG, VERSION, ENABLE_, REMARK_
+    </sql>
+
+</mapper>

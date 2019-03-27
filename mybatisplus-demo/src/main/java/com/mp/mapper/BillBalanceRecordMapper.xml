@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.BillBalanceRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.BillBalanceRecord">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="BALANCE_ID" property="balanceId" />
+        <result column="BALANCE_AMOUNT" property="balanceAmount" />
+        <result column="BALANCE_TIME" property="balanceTime" />
+        <result column="REMARK" property="remark" />
+        <result column="INSERT_USER_ID" property="insertUserId" />
+        <result column="INSERT_TIME" property="insertTime" />
+        <result column="BANK_ACCOUNT_ID" property="bankAccountId" />
+        <result column="FINANCE_CHECK_TIME" property="financeCheckTime" />
+        <result column="FINANCE_CHECK_STATUS" property="financeCheckStatus" />
+        <result column="FINANCE_CHECK_USER_ID" property="financeCheckUserId" />
+        <result column="SYNCHRONIZATION_TIME" property="synchronizationTime" />
+        <result column="SYNCHRONIZATION_STATUS" property="synchronizationStatus" />
+        <result column="SYNCHRONIZATION_USER_ID" property="synchronizationUserId" />
+        <result column="ADMISSION_CHECK_TIME" property="admissionCheckTime" />
+        <result column="ADMISSION_CHECK_STATUS" property="admissionCheckStatus" />
+        <result column="ADMISSION_CHECK_USER_ID" property="admissionCheckUserId" />
+        <result column="ADMISSION_CHECK_REMARK" property="admissionCheckRemark" />
+        <result column="INSERT_REMARK" property="insertRemark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, BALANCE_ID, BALANCE_AMOUNT, BALANCE_TIME, REMARK, INSERT_USER_ID, INSERT_TIME, BANK_ACCOUNT_ID, FINANCE_CHECK_TIME, FINANCE_CHECK_STATUS, FINANCE_CHECK_USER_ID, SYNCHRONIZATION_TIME, SYNCHRONIZATION_STATUS, SYNCHRONIZATION_USER_ID, ADMISSION_CHECK_TIME, ADMISSION_CHECK_STATUS, ADMISSION_CHECK_USER_ID, ADMISSION_CHECK_REMARK, INSERT_REMARK
+    </sql>
+
+</mapper>

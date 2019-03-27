@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.BalanceBankAccountsInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.BalanceBankAccountsInfo">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="BALANCE_ID" property="balanceId" />
+        <result column="BANK_ACCOUNT_ID" property="bankAccountId" />
+        <result column="TOTAL_AMOUNT" property="totalAmount" />
+        <result column="RECORDED_AMOUNT" property="recordedAmount" />
+        <result column="NOT_RECORDED_AMOUNT" property="notRecordedAmount" />
+        <result column="LATEST_RECORD_TIME" property="latestRecordTime" />
+        <result column="SYNC_MONEY" property="syncMoney" />
+        <result column="FINANCE_CHECK_MONEY" property="financeCheckMoney" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, BALANCE_ID, BANK_ACCOUNT_ID, TOTAL_AMOUNT, RECORDED_AMOUNT, NOT_RECORDED_AMOUNT, LATEST_RECORD_TIME, SYNC_MONEY, FINANCE_CHECK_MONEY
+    </sql>
+
+</mapper>

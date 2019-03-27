@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.AreaInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.AreaInfo">
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="AREA_NAME" property="areaName" />
+        <result column="PARENT_CODE" property="parentCode" />
+        <result column="AREA_LEVEL" property="areaLevel" />
+        <result column="STATUS" property="status" />
+        <result column="JINDIE_AREA_CODE" property="jindieAreaCode" />
+        <result column="ISSYNC" property="issync" />
+        <result column="SYNC_TIME" property="syncTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AREA_CODE, AREA_NAME, PARENT_CODE, AREA_LEVEL, STATUS, JINDIE_AREA_CODE, ISSYNC, SYNC_TIME
+    </sql>
+
+</mapper>

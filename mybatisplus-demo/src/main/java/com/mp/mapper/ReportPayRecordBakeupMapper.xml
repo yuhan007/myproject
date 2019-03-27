@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.ReportPayRecordBakeupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.ReportPayRecordBakeup">
+        <id column="TRADE_ID" property="tradeId" />
+        <result column="USER_ID" property="userId" />
+        <result column="TRADE_USER_ID" property="tradeUserId" />
+        <result column="PRODUCT_ID" property="productId" />
+        <result column="NSRSBH" property="nsrsbh" />
+        <result column="PROVINCE" property="province" />
+        <result column="CITY" property="city" />
+        <result column="REPORT_ID" property="reportId" />
+        <result column="PAY_TIME" property="payTime" />
+        <result column="PAY_AMOUNT" property="payAmount" />
+        <result column="PAY_COPIES" property="payCopies" />
+        <result column="PAY_TYPE" property="payType" />
+        <result column="REMARK" property="remark" />
+        <result column="REPORT_YEAR_MONTH" property="reportYearMonth" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="STANDARD_PRODUCT_ID" property="standardProductId" />
+        <result column="REISSUE" property="reissue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TRADE_ID, USER_ID, TRADE_USER_ID, PRODUCT_ID, NSRSBH, PROVINCE, CITY, REPORT_ID, PAY_TIME, PAY_AMOUNT, PAY_COPIES, PAY_TYPE, REMARK, REPORT_YEAR_MONTH, CREATE_TIME, STANDARD_PRODUCT_ID, REISSUE
+    </sql>
+
+</mapper>

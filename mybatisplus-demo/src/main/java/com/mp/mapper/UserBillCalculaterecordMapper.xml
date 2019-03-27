@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.UserBillCalculaterecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.UserBillCalculaterecord">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="CALCULATE_TIME" property="calculateTime" />
+        <result column="STATUS" property="status" />
+        <result column="SUCCESS_COUNT" property="successCount" />
+        <result column="FAIL_COUNT" property="failCount" />
+        <result column="REMARK" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, CALCULATE_TIME, STATUS, SUCCESS_COUNT, FAIL_COUNT, REMARK
+    </sql>
+
+</mapper>

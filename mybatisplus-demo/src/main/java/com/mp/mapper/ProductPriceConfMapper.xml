@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.ProductPriceConfMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.ProductPriceConf">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="PRODUCT_ID" property="productId" />
+        <result column="MIN_VALUE" property="minValue" />
+        <result column="MAX_VALUE" property="maxValue" />
+        <result column="PER_PRICE" property="perPrice" />
+        <result column="DISCOUNT" property="discount" />
+        <result column="REMARK" property="remark" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="PROFIT_RATIO" property="profitRatio" />
+        <result column="USER_ID" property="userId" />
+        <result column="ACCESS_STATISTICS_ASIGN" property="accessStatisticsAsign" />
+        <result column="STATUS" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, PRODUCT_ID, MIN_VALUE, MAX_VALUE, PER_PRICE, DISCOUNT, REMARK, CREATE_USER_ID, CREATE_TIME, UPDATE_USER_ID, UPDATE_TIME, PROFIT_RATIO, USER_ID, ACCESS_STATISTICS_ASIGN, STATUS
+    </sql>
+
+</mapper>

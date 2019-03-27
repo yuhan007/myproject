@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.VoucherSubjectDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.VoucherSubjectDetail">
+        <id column="SUBJECT_DETAIL_ID" property="subjectDetailId" />
+        <result column="SYNC_ID" property="syncId" />
+        <result column="SUMMARY" property="summary" />
+        <result column="SUBJECT_CODE" property="subjectCode" />
+        <result column="FDEBIT" property="fdebit" />
+        <result column="FCREDIT" property="fcredit" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SUBJECT_DETAIL_ID, SYNC_ID, SUMMARY, SUBJECT_CODE, FDEBIT, FCREDIT
+    </sql>
+
+</mapper>

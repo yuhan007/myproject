@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.OrganizationAreaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.OrganizationArea">
+        <result column="AREA_CODE" property="areaCode" />
+        <result column="ORGANIZATION_CODE" property="organizationCode" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="PERCENTAGE" property="percentage" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AREA_CODE, ORGANIZATION_CODE, CREATE_TIME, CREATE_USER_ID, PERCENTAGE
+    </sql>
+
+</mapper>

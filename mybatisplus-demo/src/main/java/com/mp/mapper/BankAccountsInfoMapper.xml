@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mp.mapper.BankAccountsInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mp.model.BankAccountsInfo">
+        <id column="SERIAL_ID" property="serialId" />
+        <result column="ACCOUNT_ID" property="accountId" />
+        <result column="ACCOUNT_NAME" property="accountName" />
+        <result column="BANK_NAME" property="bankName" />
+        <result column="REMARK" property="remark" />
+        <result column="STATUS" property="status" />
+        <result column="CREATE_USER_ID" property="createUserId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_USER_ID" property="updateUserId" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="BANK_SITE_CODE" property="bankSiteCode" />
+        <result column="SUBJECT_CODE" property="subjectCode" />
+        <result column="ISSYNC" property="issync" />
+        <result column="SYNC_TIME" property="syncTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERIAL_ID, ACCOUNT_ID, ACCOUNT_NAME, BANK_NAME, REMARK, STATUS, CREATE_USER_ID, CREATE_TIME, UPDATE_USER_ID, UPDATE_TIME, BANK_SITE_CODE, SUBJECT_CODE, ISSYNC, SYNC_TIME
+    </sql>
+
+</mapper>
